@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html xml:lang="en">
   <head>
     <meta charset=utf-8 />
     <title>
@@ -9,27 +8,67 @@
       {% endif %}
       Terence Ponce's GitHub site
     </title>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" href="/css/andreas07/andreas07.css" type="text/css" />
-    <!--[if IE 6]>
-      <link rel="stylesheet" href="/css/andreas07/fix.css" type="text/css" />
+    <meta name="author" content="Terence Ponce" />
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% else %}
+    <meta name="description" content="{{ site.title }} {{ page.title }}" />
+    {% endif %}
+
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}" />
+    {% endif %}
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
   </head>
   <body>
-    <div id="sidebar">
-      <h1>Terence Ponce</h1>
-      <h2>GitHub page of a software developer</h2>
-
-      <div id="menu">
-		    <a href="/">Home</a>
-		    <a href="/#about">About</a>
-		    <a href="/#services">Services</a>
-		    <a href="/#contact">Contact</a>
-		    <a href="/#portfolio">Portfolio</a>
-	    </div>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="/">Terence Ponce</a>
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div id="content">
-      {{ content }}
+
+    <div class="container-fluid">
+      <div class="sidebar">
+        <div class="well">
+          <h5>Sidebar</h5>
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div id="main" class="span12">
+          {{ content }}
+        </div>
+
+        <footer>
+          <p>&copy; Terence Ponce</p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
