@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      {% if page.title %}
+        {{ page.title }} |
+      {% endif %}
+      Terence Ponce's GitHub site
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/andreas07/andreas07.css" type="text/css" />
+    <!--[if IE 6]>
+      <link rel="stylesheet" href="/css/andreas07/fix.css" type="text/css" />
+    <![endif]-->
+  </head>
+  <body>
+    <div id="sidebar">
+      <h1>Terence Ponce</h1>
+      <h2>GitHub page of a software developer</h2>
+
+      <div id="menu">
+		    <a href="/">Home</a>
+		    <a href="/#about">About</a>
+		    <a href="/#services">Services</a>
+		    <a href="/#contact">Contact</a>
+		    <a href="/#portfolio">Portfolio</a>
+	    </div>
+    </div>
+    <div id="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
+
