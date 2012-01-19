@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="hero-unit">
+  <h1>{{ page.title }}</h1>
+  <p>
+    Posted on {{ page.date | format_date }}
+    {% if page.category %}
+      in <a href="/categories/{{ page.category | slugize }}">{{ page.category }}</a>
+    {% endif %}
+  </p>
+  <span class="label">
+    {% for tag in page.tags %}
+    <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
+    {% endfor %}
+  </span>
+</div>
+{{ content }}
+

@@ -39,3 +39,11 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: style
 
+github_user: terenceponce
+
+paginate: 5
+paginate_files:
+  - blog.html
+
+permalink: /blog/:year/:month/:day/:title
+
