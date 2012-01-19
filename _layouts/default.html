@@ -30,6 +30,7 @@
         padding-top: 60px;
       }
     </style>
+    {% include google_analytics.html %>}
   </head>
   <body>
     <div class="topbar">
@@ -65,9 +66,7 @@
           {{ content }}
         </div>
 
-        <footer>
-          <p>&copy; Terence Ponce</p>
-        </footer>
+        {% include footer.html %}
       </div>
     </div>
   </body>
