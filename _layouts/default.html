@@ -36,19 +36,11 @@
     {% include header.html %}
 
     <div class="container-fluid">
-      <div class="sidebar">
-        <div class="well">
-          <h5>Sidebar</h5>
-          <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div>
-      </div>
+      {% unless page.no_sidebar %}
+        {% include sidebar.html %}
+      {% endunless %}
       <div class="content">
-        <div id="main" class="span12">
+        <div id="main" class="span{% if page.no_sidebar %}14{% else %}12{% endif %}">
           {{ content }}
         </div>
 
