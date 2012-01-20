@@ -33,9 +33,9 @@ comments: true
   {% endif %}
   </ul>
 </div>
-{% include disqus.html %}
-<div>
+<div id="comments">
   <h2>Comments</h2>
-  <div id="disqus_thread" style="display: none;" aria-live="polite">{% include disqus_thread.html %}</div>
+  <div id="disqus_thread"></div>
+  {% include disqus.html %}
 </div>
 
