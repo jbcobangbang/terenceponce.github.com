@@ -10,7 +10,7 @@ Terence Ponce's GitHub page.
     * ~~Feed~~
     * Archive
 * Sidebar
-    * Tag Cloud
+    * ~~Tag Cloud~~
     * Category List
     * Monthly Archive
 * Proper SEO
