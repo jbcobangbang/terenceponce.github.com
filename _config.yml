@@ -40,10 +40,12 @@ kramdown:
     coderay_css: style
 
 github_user: terenceponce
+disqus_short_name: terenceponcegithub
 
 paginate: 5
 paginate_files:
   - blog.html
 
 permalink: /blog/:year/:month/:day/:title
+url: http://terenceponce.github.com
 

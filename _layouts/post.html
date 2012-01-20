@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="hero-unit">
@@ -31,5 +32,10 @@ layout: default
     <li class="next disabled"><a>Next &rarr;</a></li>
   {% endif %}
   </ul>
+</div>
+{% include disqus.html %}
+<div>
+  <h2>Comments</h2>
+  <div id="disqus_thread" style="display: none;" aria-live="polite">{% include disqus_thread.html %}</div>
 </div>
 
