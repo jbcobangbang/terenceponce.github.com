@@ -47,5 +47,6 @@ paginate_files:
   - blog.html
 
 permalink: /blog/:year/:month/:day/:title
+title: "Terence Ponce's website"
 url: http://terenceponce.github.com
 

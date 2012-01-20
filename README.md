@@ -7,7 +7,7 @@ Terence Ponce's GitHub page.
     * ~~Comments~~
     * Tags
     * Categories
-    * Feed
+    * ~~Feed~~
 * Sidebar
 * Proper SEO
 
