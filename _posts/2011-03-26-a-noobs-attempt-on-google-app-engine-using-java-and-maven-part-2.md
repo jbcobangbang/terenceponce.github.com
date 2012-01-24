@@ -10,7 +10,7 @@ tags:
  - Maven
 ---
 
-In my [last entry](http://terenceponce.github.com/2011/03/12/a-noobs-attempt-on-google-app-engine-using-java-and-maven/), I modified my Maven project so it can be deployed to Google App Engine. This time, I’m going to work on my actual application so I can finally have something to show to other people.
+In my [last entry](http://terenceponce.github.com/blog/2011/03/12/a-noobs-attempt-on-google-app-engine-using-java-and-maven/), I modified my Maven project so it can be deployed to Google App Engine. This time, I’m going to work on my actual application so I can finally have something to show to other people.
 
 Right now, my Spring web application works fine on Google App Engine. Let me go over the code that I have so far. I first made a bean called Manufacturer:
 

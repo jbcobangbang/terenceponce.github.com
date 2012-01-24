@@ -8,7 +8,7 @@ tags:
  - Spring
 ---
 
-[Last time](http://terenceponce.github.com/2011/03/07/bad-start-with-spring-part-2/), I was kind of frustrated as well as lazy about my problem. As a recap, I had a problem with manually injecting beans in Spring 3.0 because I tried doing it the old fashioned way. After a long time of reading and thinking, I realized that I’m having problems because I didn’t embrace the sudden transition I had with annotations.
+[Last time](http://terenceponce.github.com/blog/2011/03/07/bad-start-with-spring-part-2/), I was kind of frustrated as well as lazy about my problem. As a recap, I had a problem with manually injecting beans in Spring 3.0 because I tried doing it the old fashioned way. After a long time of reading and thinking, I realized that I’m having problems because I didn’t embrace the sudden transition I had with annotations.
 
 Since I’m the kind of person who embraces change, I decided to stop whining and use the auto wiring feature instead. I added the @Autowired annotation to the setter method inside the controller:
 

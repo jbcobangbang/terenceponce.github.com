@@ -12,7 +12,7 @@ tags:
 
 Hi there! It’s been a while since I made an article. I got pretty busy and kinda lazy over the past few months so I completely forgot that I have a blog going on.
 
-So the last article that I made was about [using Google App Engine](http://terenceponce.github.com/2011/03/26/a-noobs-attempt-on-google-app-engine-using-java-and-maven-part-2/). I stopped that project because it got pretty complicated the moment I tried using the Datastore. So now, I decided to build something simple, something that doesn’t require a database to run.
+So the last article that I made was about [using Google App Engine](http://terenceponce.github.com/blog/2011/03/26/a-noobs-attempt-on-google-app-engine-using-java-and-maven-part-2/). I stopped that project because it got pretty complicated the moment I tried using the Datastore. So now, I decided to build something simple, something that doesn’t require a database to run.
 
 Recently, I found out that you can trace a Facebook image back to its publisher based on the image’s URL. Obviously, the image should come from Facebook’s content deliver network or CDN as people usually describe it. It’s no secret, really. I found out how immediately after my first Google search. I’m pretty sure revealing how is kind of unethical and on a moral gray area, but hey, the information is already out there. It’s not like I can make it any worse by posting it here. Besides, I trust that any reader of this blog (if there’s really anyone reading this) would be responsible enough not to use it for evil.
 
