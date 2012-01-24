@@ -63,3 +63,7 @@ body {
   border-radius: 6px;
 }
 
+#main p {
+  padding-bottom: 20px;
+}
+
