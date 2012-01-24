@@ -11,11 +11,11 @@ comments: true
       in <a href="/categories/{{ page.category | slugize }}">{{ page.category }}</a>
     {% endif %}
   </p>
+  {% for tag in page.tags %}
   <span class="label">
-    {% for tag in page.tags %}
     <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
-    {% endfor %}
   </span>
+  {% endfor %}
 </div>
 {{ content }}
 <div class="pagination">
