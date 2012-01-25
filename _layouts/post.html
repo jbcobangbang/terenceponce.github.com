@@ -7,15 +7,7 @@ comments: true
   <h1>{{ page.title }}</h1>
   <p>
     Posted on {{ page.date | date_to_long_string }}
-    {% if page.category %}
-      in <a href="/categories/{{ page.category | slugize }}">{{ page.category }}</a>
-    {% endif %}
   </p>
-  {% for tag in page.tags %}
-  <span class="label">
-    <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
-  </span>
-  {% endfor %}
 </div>
 {{ content }}
 <div class="pagination">
@@ -25,7 +17,6 @@ comments: true
   {% else %}
     <li class="prev disabled"><a>&larr; Previous</a></li>
   {% endif %}
-    <li><a href="/archive.html">Archive</a></li>
   {% if page.next %}
     <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
   {% else %}

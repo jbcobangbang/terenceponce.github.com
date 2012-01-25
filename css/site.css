@@ -56,7 +56,9 @@ body {
 }
 
 .sidebar-widget h1 {
-  text-align: right;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times,serif;
+  font-weight: bold;
   background-color: #e6e6e6;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -65,5 +67,9 @@ body {
 
 #main p {
   padding-bottom: 20px;
+}
+
+.blog-item {
+  padding-bottom: 8px;
 }
 
